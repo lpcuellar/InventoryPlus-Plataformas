@@ -5,10 +5,24 @@
              android:layout_height="match_parent"
              tools:context=".FragmentA">
 
-    <!-- TODO: Update blank fragment layout -->
+    <Button
+            android:id="@+id/addButton"
+            android:layout_height="54dp"
+            android:layout_width="55dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="35dp"
+            android:layout_marginTop="525dp"
+            android:layout_marginLeft="330dp"
+            android:background="@drawable/add_icon_green"/>
+
     <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:id="@+id/textoPrincipal"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="110dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="MENU PRINCIPAL, AYUDAAA"/>
+
+
 
 </FrameLayout>
