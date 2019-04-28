@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context=".FragmentB">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".FragmentB"
+              android:orientation="vertical">
 
     <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible">
 
         <android.support.design.widget.TextInputEditText
                 android:id="@+id/nombreProducto"
-                android:layout_marginTop="35dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:inputType="text"
-                android:text="Nombre"/>
-
+                android:layout_height="78dp"
+                android:hint="Nombre..."
+                android:gravity="center|start" android:visibility="visible"/>
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -27,14 +30,12 @@
 
         <android.support.design.widget.TextInputEditText
                 android:id="@+id/codigoProducto"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:inputType="text"
-                android:text="Código"/>
-
+                android:layout_height="74dp"
+                android:hint="Código..."/>
     </android.support.design.widget.TextInputLayout>
 
-</FrameLayout>
+</LinearLayout>

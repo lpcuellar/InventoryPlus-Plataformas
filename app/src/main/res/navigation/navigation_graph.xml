@@ -16,17 +16,24 @@
         <action
                 android:id="@+id/FragmentAtoC"
                 app:destination="@id/fragmentC"/>
+        <action android:id="@+id/action_FragmentA_to_fragmentList" app:destination="@id/fragmentList"/>
     </fragment>
 
     <fragment
             android:id="@+id/fragmentB"
             android:name="com.example.inventory.FragmentB"
             android:label="fragment_b"
-            tools:layout="@layout/fragment_b"/>
+            tools:layout="@layout/fragment_b">
+        <action android:id="@+id/FragmentBtoA" app:destination="@id/FragmentA"/>
+    </fragment>
 
     <fragment android:id="@+id/fragmentC"
               android:name="com.example.inventory.FragmentC"
               android:label="fragment_c"
-              tools:layout="@layout/fragment_c"/>
+              tools:layout="@layout/fragment_c">
+        <action android:id="@+id/FragmentCtoA" app:destination="@id/FragmentA"/>
+    </fragment>
+    <fragment android:id="@+id/fragmentList" android:name="com.example.inventory.FragmentList"
+              android:label="fragment_list" tools:layout="@layout/fragment_list"/>
 
 </navigation>
